@@ -17,9 +17,12 @@ class GuiaDeMoteisItens extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(AppStrings.itens),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_drop_down_rounded),
-          onPressed: () => Navigator.of(context).pop(),
+        leading: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: IconButton(
+            icon: const Icon(Icons.close),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
         ),
       ),
       body: SingleChildScrollView(

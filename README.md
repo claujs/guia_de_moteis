@@ -17,7 +17,8 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Visão Geral do Projeto
 
-Este projeto utiliza boas práticas da Clean Architecture para garantir manutenibilidade e escalabilidade. As responsabilidades estão bem separadas entre camadas, facilitando testes e a evolução da aplicação.
+Este projeto utiliza boas práticas da Clean Architecture para garantir manutenibilidade e escalabilidade. 
+Além disso, o estado da aplicação é gerenciado com RiverPod. As responsabilidades estão bem separadas entre camadas, facilitando testes e a evolução da aplicação.
 
 ## Funcionalidades e Métodos Utilizados
 

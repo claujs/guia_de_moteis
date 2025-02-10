@@ -22,15 +22,18 @@ class GuiaDeMoteisPeriodo extends StatelessWidget {
   final dynamic periodo;
   const GuiaDeMoteisPeriodo({super.key, required this.periodo});
 
+  double _calculateFinalPrice(double valorTotal, double discount) {
+    return discount > 0 ? valorTotal * (1 - (discount / 100)) : valorTotal;
+  }
+
   @override
   Widget build(BuildContext context) {
     final double discountValue = periodo.desconto?.desconto ?? 0;
     final int discountRounded = discountValue.round();
     final currencyFormatter =
         NumberFormat.currency(locale: 'pt_BR', symbol: 'R\$');
-    final double finalPrice = discountValue > 0
-        ? periodo.valorTotal * (1 - (discountValue / 100))
-        : periodo.valorTotal;
+    final double finalPrice =
+        _calculateFinalPrice(periodo.valorTotal, discountValue);
 
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
