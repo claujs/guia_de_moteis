@@ -40,7 +40,18 @@ void main() {
 
   group("Teste da Camada Remote Datasource", () {
     test("Retorna GuiasDeMoteisResponseModel para status 200", () async {
-      final fakeJson = {"key": "value"}; // substitua pelo JSON válido esperado
+      final fakeJson = {
+        "fantasia": "Hotel Example",
+        "logo": "https://example.com/logo.png",
+        "bairro": "Centro",
+        "distancia": 2.5,
+        "qtdFavoritos": 10,
+        "media": 4.2,
+        "qtdAvaliacoes": 100,
+        "suites": [
+          {"nome": "Suite Gold", "descricao": "Luxo total", "preco": 300.0}
+        ]
+      };
       final fakeResponse = Response(
         requestOptions: RequestOptions(path: ''),
         statusCode: 200,
