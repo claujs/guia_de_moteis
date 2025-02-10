@@ -17,7 +17,7 @@ class FakeRemoteDatasourceSuccess implements GuiaDeMoteisRemoteDataSource {
 class FakeRemoteDatasourceFailure implements GuiaDeMoteisRemoteDataSource {
   @override
   Future<GuiasDeMoteisResponseModel> getGuiasDeMoteis() async {
-    throw ServerException();
+    throw ServerException(message: "Fake error");
   }
 }
 

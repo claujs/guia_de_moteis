@@ -10,6 +10,8 @@ abstract class GuiaDeMoteisRemoteDataSource {
 
 class GuiaDeMoteisRemoteDataSourceImpl implements GuiaDeMoteisRemoteDataSource {
   final Dio dio;
+  final String baseUrl = 'https://www.jsonkeeper.com/b/';
+  final String apiKey = '1IXK';
 
   GuiaDeMoteisRemoteDataSourceImpl({required this.dio});
 
@@ -17,7 +19,7 @@ class GuiaDeMoteisRemoteDataSourceImpl implements GuiaDeMoteisRemoteDataSource {
   Future<GuiasDeMoteisResponseModel> getGuiasDeMoteis() async {
     try {
       final response = await dio.get(
-        'https://www.jsonkeeper.com/b/1IXK',
+        '$baseUrl$apiKey',
         options: Options(
           headers: {
             'Content-Type': 'application/json',
@@ -31,14 +33,14 @@ class GuiaDeMoteisRemoteDataSourceImpl implements GuiaDeMoteisRemoteDataSource {
         final jsonMap = response.data as Map<String, dynamic>;
         return GuiasDeMoteisResponseModel.fromJson(jsonMap);
       } else {
-        throw ServerException();
+        throw ServerException(message: 'Failed to fetch data');
       }
     } on DioException catch (dioError) {
       log('DioError ao fazer requisição: $dioError');
-      throw ServerException();
+      throw ServerException(message: 'DioError ao fazer requisição');
     } catch (e, stack) {
       log('Erro ao decodificar JSON: $e\n$stack');
-      throw ServerException();
+      throw ServerException(message: 'Erro ao decodificar JSON');
     }
   }
 }

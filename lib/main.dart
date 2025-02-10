@@ -6,7 +6,7 @@ import '../../core/inject/inject.dart' as di;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await di.init(); // Inicializa o GetIt
+  await di.init();
   runApp(const ProviderScope(child: MyApp()));
 }
 
