@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:guia_moteis/core/constants/app_colors.dart';
 import 'presentation/pages/guia_de_moteis_page.dart';
 import '../../core/inject/inject.dart' as di;
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Guia de Moteis',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: AppColors.red as MaterialColor),
       home: const GuiaDeMoteisListPage(),
     );
   }
