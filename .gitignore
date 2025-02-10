@@ -53,3 +53,17 @@ build/ios/XCBuildData/PIFCache/project/PROJECT@v11_mod=bf2065530869eda17cfea226c
 build/ios/XCBuildData/PIFCache/workspace/WORKSPACE@v11_hash=(null)_subobjects=c46db262e1b0f08118df9b82faf0dd21-json
 build/test_cache/build/cache.dill.track.dill
 build/test_cache/build/cache.dill.track.dill
+build/cache.dill.track.dill
+build/ios/Debug-iphonesimulator/App.framework/App
+build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources
+build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin
+build/ios/Debug-iphonesimulator/Runner.app/Runner
+build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources
+build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App
+build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources
+build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin
+build/ios/iphonesimulator/Runner.app/Runner
+build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources
+build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App
+build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources
+build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin

@@ -1,4 +1,3 @@
-// lib/data/models/guia_de_moteis_model.dart
 import 'package:equatable/equatable.dart';
 
 import '../../domain/entities/guia_de_moteis.dart';

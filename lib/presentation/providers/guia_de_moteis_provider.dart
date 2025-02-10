@@ -1,4 +1,3 @@
-// lib/presentation/providers/guia_de_moteis_provider.dart
 import 'package:dartz/dartz.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -57,7 +56,6 @@ class GuiaDeMoteisNotifier extends StateNotifier<GuiaDeMoteisState> {
   }
 }
 
-/// Provider do StateNotifier
 final guiaDeMoteisNotifierProvider =
     StateNotifierProvider<GuiaDeMoteisNotifier, GuiaDeMoteisState>((ref) {
   final useCase = getIt<GetGuiasDeMoteis>();

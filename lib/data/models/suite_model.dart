@@ -1,4 +1,3 @@
-// lib/data/models/suite_model.dart
 import '../../domain/entities/suite.dart';
 
 class DescontoModel extends Desconto {

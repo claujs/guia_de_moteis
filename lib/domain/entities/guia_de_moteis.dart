@@ -1,8 +1,5 @@
-// lib/domain/entities/guia_de_moteis.dart
 import 'package:equatable/equatable.dart';
 
-// Se seu app tiver mais detalhes (como lista de suítes), você pode adicionar aqui
-// Exemplo:
 import 'suite.dart';
 
 class GuiaDeMoteis extends Equatable {

@@ -1,4 +1,3 @@
-// ...conteúdo original do full_screen_itens.dart...
 import 'package:flutter/material.dart';
 import 'package:guia_moteis/core/constants/app_resizer.dart';
 import 'package:guia_moteis/core/constants/app_text_styles.dart';
