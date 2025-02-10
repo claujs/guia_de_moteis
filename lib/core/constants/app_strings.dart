@@ -8,7 +8,9 @@ class AppStrings {
   static const String itens = 'Itens'; // nova constante
   static const String principaisItens = 'principais itens'; // nova constante
   static const String temTambem = 'tem também'; // nova constante
-  static const String avaliacoes = 'avaliações'; // nova constante
+  static const String avaliacoes = 'avaliações';
+  static const String erroBuscarDados =
+      'Erro ao buscar dados'; // nova constante
 
   static String additionalQuantity(int quantity) =>
       'Só mais $quantity pelo app';

@@ -1,6 +1,8 @@
 // lib/presentation/providers/guia_de_moteis_provider.dart
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:dartz/dartz.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../core/constants/app_strings.dart';
 import '../../core/error/failures.dart';
 import '../../core/inject/inject.dart';
 import '../../domain/entities/guia_de_moteis_response.dart';
@@ -45,7 +47,7 @@ class GuiaDeMoteisNotifier extends StateNotifier<GuiaDeMoteisState> {
     result.fold(
       (failure) => state = state.copyWith(
         isLoading: false,
-        error: 'Erro ao buscar dados',
+        error: AppStrings.erroBuscarDados, // Mensagem de erro atualizada
       ),
       (response) => state = state.copyWith(
         isLoading: false,
