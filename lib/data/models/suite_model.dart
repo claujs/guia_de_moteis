@@ -21,7 +21,6 @@ class PeriodoModel extends Periodo {
   });
 
   factory PeriodoModel.fromJson(Map<String, dynamic> json) {
-    // "desconto" pode ser null ou um objeto { "desconto": 48 }
     final descontoJson = json['desconto'] as Map<String, dynamic>?;
 
     return PeriodoModel(
