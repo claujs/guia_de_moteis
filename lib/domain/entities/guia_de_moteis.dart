@@ -11,7 +11,6 @@ class GuiaDeMoteis extends Equatable {
   final int qtdAvaliacoes;
   final double media;
 
-  // Caso tenha suites:
   final List<Suite>? suites;
 
   const GuiaDeMoteis({
