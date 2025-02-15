@@ -59,6 +59,12 @@ Além disso, o estado da aplicação é gerenciado com RiverPod. As responsabili
 - Uso de UseCases e Repositórios para isolamento de regras de negócio.
 - Testabilidade e manutenção facilitadas através do isolamento de responsabilidades.
 
+## Vídeo Demonstrativo
+
+Assista ao vídeo para ver o funcionamento do aplicativo:
+
+[![Vídeo Demonstrativo](https://img.youtube.com/vi/aXqcIhKdymc/0.jpg)](https://youtube.com/shorts/aXqcIhKdymc)
+
 ## Screenshots
 
 Para visualizar a interface do aplicativo, confira os screenshots abaixo:
@@ -66,9 +72,3 @@ Para visualizar a interface do aplicativo, confira os screenshots abaixo:
 ![Tela Inicial](assets/screenshots/tela1.png)
 ![Detalhe da Suite](assets/screenshots/tela3.png)
 ![Valores com descontos](assets/screenshots/tela2.png)
-
-## Vídeo Demonstrativo
-
-Assista ao vídeo para ver o funcionamento do aplicativo:
-
-[![Vídeo Demonstrativo](https://img.youtube.com/vi/aXqcIhKdymc/0.jpg)](https://youtube.com/shorts/aXqcIhKdymc)
