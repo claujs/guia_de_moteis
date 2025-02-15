@@ -71,7 +71,4 @@ Para visualizar a interface do aplicativo, confira os screenshots abaixo:
 
 Assista ao vídeo para ver o funcionamento do aplicativo:
 
-<iframe width="560" height="315" src="https://youtube.com/shorts/aXqcIhKdymc" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+[![Vídeo Demonstrativo](https://img.youtube.com/vi/aXqcIhKdymc/0.jpg)](https://youtube.com/shorts/aXqcIhKdymc)
